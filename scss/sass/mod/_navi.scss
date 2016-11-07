@@ -79,7 +79,7 @@
             .form-wrapper {
                 height:inherit;
                 display: block;
-                margin:$padding;
+                margin:3*$padding;
                 .insert-search-wrapper{
                     float:left;
                     width:5*$padding;
@@ -115,6 +115,7 @@
                             color: $color-three;
                             @include vendor(transition, $animate);
                             background: $color-two;
+                            border:none;
                         }
                     }
                 }
@@ -331,6 +332,9 @@
         }
         ul {
             display: none;
+        }
+        .search{
+            display:none;
         }
     }
 }
