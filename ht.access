@@ -1,0 +1,4 @@
+PassengerNodejs /home/k/kst37/nodejs/node-v0.12.9-linux-x64/bin/node
+PassengerAppRoot /home/k/kst37/nodejs/HelloNodejs
+PassengerAppType node
+PassengerStartupFile app.js
