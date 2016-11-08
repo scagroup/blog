@@ -1,9 +1,23 @@
+<?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+define('MODX_API_MODE', true);
+@include(dirname(__FILE__) . '/config.core.php');
+@include_once(MODX_CORE_PATH . "model/modx/modx.class.php");
+$modx= new modX();
+$modx->initialize('web');
+?>
 <html>
 <head>
     <meta charset="UTF8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title><?php
+        echo $modx->getOption('site_name');
+        ?>
+    </title>
 </head>
 <body>
 <div class="navi" state="on">
@@ -94,6 +108,10 @@
     </div>
     <div class="col-md-12">
         <div class="text">
+            <?php //print_r ($modx->resource->get('id'));
+            $object = $modx->getObject("modResource","1");
+            echo $object->getContent();
+            ?>
             <p>Многие говорят, что реклама на «Поиске» стоит дорого, поэтому я буду рекламироваться в «Рекламных Сетях
                 «Яндекс»», сразу же скажу что это не правильный подход к ведению рекламной кампании.</p>
             <p>Все дело в том, что ставки на клики в Яндекс очень пугают, сбивают с толку, и я бы на вашем месте сильно
