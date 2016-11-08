@@ -87,7 +87,8 @@
                     margin:0;
                     .insert-search{
                         font-size: $font-size-small;
-                        padding:$padding*1.8;
+                        padding:$padding*0.6;
+                        z-index: 100;
                     }
                 }
                 .input-search-wrapper{
@@ -95,22 +96,28 @@
                     width:100%;
                     margin:0;
                     left: 0;
-                    border: $textarea-border;
-                    .write-search-wrapper {
+                    border: $border;
+                    z-index:10;
+                    .write-search-wrapper{
                         input {
                             width: 100%;
                             margin:0;
-                            padding:2*$padding;
+                            padding: $padding;
                             font-size: $font-size-base;
                             padding-left: 6*$padding;
                             padding-right: 6*$padding;
+                            border: $textarea-border;
                         }
                     }
                 }
                 .input-search-button-wrapper{
                     float: right;
                     button{
-                        padding: 25px;
+                        background: white;
+                        margin: 2px 0px;
+                        padding: $padding*1.15;
+                        border: none;
+                        z-index:100;
                         &:hover{
                             color: $color-three;
                             @include vendor(transition, $animate);

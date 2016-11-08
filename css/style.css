@@ -535,24 +535,31 @@ hr {
           margin: 0; }
           .navi[state="on"] .menu .search .form-wrapper .insert-search-wrapper .insert-search {
             font-size: 0.7em;
-            padding: 18px; }
+            padding: 6px;
+            z-index: 100; }
         .navi[state="on"] .menu .search .form-wrapper .input-search-wrapper {
           position: absolute;
           width: 100%;
           margin: 0;
           left: 0;
-          border: 1px solid #EAEAEA; }
+          border: 1px solid #333;
+          z-index: 10; }
           .navi[state="on"] .menu .search .form-wrapper .input-search-wrapper .write-search-wrapper input {
             width: 100%;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
             font-size: 0.9em;
             padding-left: 60px;
-            padding-right: 60px; }
+            padding-right: 60px;
+            border: 1px solid #EAEAEA; }
         .navi[state="on"] .menu .search .form-wrapper .input-search-button-wrapper {
           float: right; }
           .navi[state="on"] .menu .search .form-wrapper .input-search-button-wrapper button {
-            padding: 25px; }
+            background: white;
+            margin: 2px 0px;
+            padding: 11.5px;
+            border: none;
+            z-index: 100; }
             .navi[state="on"] .menu .search .form-wrapper .input-search-button-wrapper button:hover {
               color: white;
               -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0.01s;
