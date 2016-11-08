@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e55a41bc-9ed5-413f-a0c8-ab00e45d004e" name="kst37.beget.tech" url="http://kst37.beget.tech">
-        <fileTransfer host="atom3.beget.com" port="21">
+      <webServer id="e55a41bc-9ed5-413f-a0c8-ab00e45d004e" name="new.klinsight.ru" url="http://new.klinsight.ru">
+        <fileTransfer host="robin.beget.com" port="21">
           <advancedOptions>
             <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
