@@ -1182,12 +1182,14 @@ h1 {
         padding-right: 5px; }
 
 .add-comment {
-  display: block; }
+  display: block;
+  height: 200px; }
   .add-comment .add-comment-wrapper {
     margin: 0;
     padding: 0;
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    height: inherit; }
     .add-comment .add-comment-wrapper > div {
       float: left; }
     .add-comment .add-comment-wrapper div {

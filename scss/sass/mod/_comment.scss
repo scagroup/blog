@@ -78,11 +78,13 @@
 
 .add-comment{
     display:block;
+    height:200px;
     .add-comment-wrapper{
         margin:0;
         padding:0;
         display:inline-block;
         width:100%;
+        height:inherit;
         > div{
             float:left;
         }
